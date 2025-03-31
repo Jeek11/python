@@ -1,0 +1,88 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Distribute space between the left and right sections */
+    align-items: center; /* Vertically center the content */
+}
+
+/* Left side of the navigation (Project Name) */
+nav .nav-left {
+    flex-grow: 1; /* Make the left side take available space */
+}
+
+nav .project-name {
+    color: white;
+    font-size: 24px; /* Adjust size as needed */
+}
+
+/* Right side of the navigation (Links) */
+nav .nav-links {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Icon styling for nav links */
+nav a i {
+    margin-right: 8px;  /* Add some space between the icon and the text */
+    font-size: 20px;    /* Adjust icon size */
+}
+
+/* Main content area */
+main {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Optional: Add spacing between main content */
+main > * {
+    margin-bottom: 20px;
+}
